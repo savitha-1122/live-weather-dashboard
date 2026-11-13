@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Weather Dashboard</h1>
+            <p>Check the weather anywhere in the world</p>
+        </header>
+
+        <!-- Search Section -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+
+        </div>
+
+        <p id="message"></p>
+
+        <!-- Current Weather -->
+
+        <section class="weather-card">
+
+            <h2 id="cityName">Search for a city</h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                🌤️
+            </div>
+
+            <h1 id="temperature">--°C</h1>
+
+            <p id="description">Weather condition</p>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Wind Speed</h3>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Feels Like</h3>
+                    <p id="feelsLike">--°C</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Five Day Forecast -->
+
+        <section class="forecast-section">
+
+            <h2>5-Day Forecast</h2>
+
+            <div id="forecast" class="forecast-container">
+
+                <p>Search for a city to see the forecast.</p>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Weather Dashboard | Powered by Open-Meteo</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
